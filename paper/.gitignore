@@ -1,0 +1,15 @@
+output/*
+!output/
+!output/memoirthesis.pdf
+
+memoirthesis.aux
+memoirthesis.bbl
+memoirthesis.blg
+memoirthesis.idx
+memoirthesis.log
+memoirthesis.out
+memoirthesis.toc
+memoirthesis.fls
+memoirthesis.fdb_latexmk
+memoirthesis.synctex.gz
+memoirthesis.pdf

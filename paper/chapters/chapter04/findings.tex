@@ -1,0 +1,81 @@
+%
+% File: findings.tex
+%
+\chapter{Findings and Analysis}
+\label{chap:findings}
+\setlength{\parskip}{1em}
+%
+This chapter presents the findings of the thematic synthesis organised around the four themes identified in the methodology. Table~\ref{tab:studies} provides a summary of the ten included studies, indicating their type, theoretical orientation, target population, and primary contribution. The thematic discussion that follows draws on these studies in combination, integrating their findings rather than summarising each in turn.
+
+\begin{table}[H]
+\centering
+\caption{Summary of reviewed studies.}
+\label{tab:studies}
+\small
+\begin{tabular}{p{0.4cm}p{3.2cm}p{2.6cm}p{2.6cm}p{4.2cm}}
+\hline
+\# & Authors (Year) & Type & Population & Primary contribution \\
+\hline
+1 & Panjwani-Charani \& Zhai (2024) & Systematic review & Learning disabilities & Typology of seven AI applications for SWLDs \\
+2 & Bewersdorff et al. (2024) & Theoretical framework & General + science ed & MLLM framework grounded in CTML \\
+3 & Osman et al. (2024) & Empirical (design + eval) & Higher ed learners & CTML-aligned video assistant tool \\
+4 & Ahmad et al. (2025) & Review & Disability + ELL & Quantified gains; ethics framework \\
+5 & Lawson \& Mayer (2024) & Experimental & General learners & Generative activities + visual learning \\
+6 & Drosos et al. (2025) & Systematic review ($n=139$) & Special education broad & Landscape map of AI/VR/LLM in SE \\
+7 & B\"uhler et al. (2024) & Qualitative interview & HE students with disabilities & Learner perceptions of generative AI \\
+8 & Urrea et al. (2024) & Systematic review ($n=13$) & Children with ASD & Tech-assisted vocabulary evidence \\
+9 & Twabu \& Modise (2025) & Theoretical & ODL/distance learners & AI-augmented CTML/CLT framework \\
+10 & Khoirunnisa et al. (2024) & Empirical (design study) & ASD reading skills & Personalised AR for reading \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{A Typology of AI-Generated Visual Explanations}
+
+The first thematic finding concerns the categorisation of AI-generated visual explanations as they appear in the reviewed literature. Across the ten studies, four broad categories can be distinguished. The first comprises \emph{generated static visuals} --- diagrams, illustrations, and infographics produced by text-to-image or multimodal models in response to a learner or teacher prompt. \citet{bewersdorff2024} treat this category as central to their framework, with examples ranging from chemical reaction diagrams to anatomical illustrations. The second category comprises \emph{augmented or annotated visuals}, in which an AI system adds textual labels, callouts, or signalling cues to existing visual content. This category aligns directly with Mayer's signalling principle and is illustrated by the \citet{bewersdorff2024} scenarios in which a textbook diagram is enriched with level-appropriate explanatory text on demand. The third category comprises \emph{adaptive multimodal sequences}, in which visual content is generated as part of a multi-step, multimodal interaction. The educational video assistant of \citet{osman2024} exemplifies this category: visuals are not produced in isolation but are embedded within a transcription--engagement--reinforcement pipeline. The fourth category comprises \emph{AI-mediated augmented reality}, in which visual scaffolding is overlaid on the physical or printed environment. \citet{khoirunnisa2024} provide the clearest example, with AR overlays personalised to ASD learner profiles for reading skill development.
+
+A cross-cutting observation is that the more complex categories --- adaptive sequences and AI-mediated AR --- are typically associated with stronger theoretical grounding. Studies that produce isolated static visuals tend to be more technologically descriptive, whereas studies that integrate visuals into multi-step pedagogical flows tend to engage more substantively with multimedia learning theory. This pattern is consistent with the observation by \citet{drosos2025} that the field is shifting from assistive substitution towards generative production, and that the more recent generative tools support more elaborate pedagogical designs.
+
+A second observation concerns the asymmetry between supply and demand. \citet{panjwani2024} document that, among empirical studies of AI for students with learning disabilities, only a minority focus on visual or non-verbal AI applications, despite the strong theoretical case for such applications with these populations. The corpus thus suggests that AI-generated visual explanations are a comparatively underdeveloped area of research relative to AI-driven adaptive learning systems and intelligent tutoring systems, even though the populations of interest in the present review would benefit most from visual modalities. This asymmetry frames much of the discussion that follows: the technological capability exists, the theoretical justification exists, but the empirical literature has not yet caught up.
+
+\section{Alignment with Multimedia Learning Theory}
+
+The second theme concerns the degree to which AI-generated visual explanations, as documented in the corpus, align with the principles of CTML and CLT. The strongest alignments emerge in three areas. First, the \emph{modality principle} --- that learners benefit when verbal information is presented as narration alongside visuals rather than as on-screen text --- is supported by both the framework of \citet{bewersdorff2024} and the implementation of \citet{osman2024}, which explicitly partitions verbal information across auditory and textual channels. Second, the \emph{signalling principle} --- that learning is improved when key elements are highlighted --- is operationalised in MLLM-mediated diagram annotation, where the AI system can selectively emphasise the elements relevant to a learner's current question. Third, the \emph{coherence principle} --- that extraneous material should be excluded --- is at least implicit in adaptive systems that prune visual content to the learner's current level.
+
+Alignment is weaker in two areas. The \emph{redundancy principle} --- that learners should not receive identical information through multiple channels simultaneously --- is at risk in many generative AI applications, where the default behaviour is to produce both an image and a textual description that essentially repeats the image's content. \citet{bewersdorff2024} acknowledge this risk and recommend that prompt design and interface design should give the learner control over which channels are activated. The \emph{personalisation principle}, which advocates conversational rather than formal language, is well-served by LLM-based interfaces but raises questions about register and accessibility for learners whose primary language differs from the system's default.
+
+The CLT lens reinforces but also complicates the multimedia framework. \citet{twabu2025} argue that the standard intrinsic--extraneous--germane partition is inadequate for AI-mediated learning, because AI systems can shift between roles --- substituting for the learner's effort (reducing germane load undesirably) or scaffolding the learner's effort (channelling germane load productively). They propose adaptive cognitive load management as a fourth construct, in which AI dynamically calibrates the complexity of generated visual content to the learner's measured load. This proposal remains conceptual, but it points to a productive line of inquiry: whether AI-generated visual explanations can be designed not merely to reduce extraneous load but to actively manage germane load on a per-learner basis.
+
+The experimental finding by \citet{lawson2024} that drawing did not produce significant learning gains, while summarising did, has direct implications for theory--practice alignment. It suggests that an AI-generated visual is most effective when it is the \emph{output} of a guided generative activity rather than the input to passive consumption. This finding cautions against the most enthusiastic claims for generative AI in education and aligns with the active-processing assumption at the heart of CTML.
+
+\section{Evidence of Pedagogical Efficacy}
+
+The third theme concerns whether AI-generated visual explanations demonstrably improve learning outcomes for the target populations. The evidence base is uneven. The strongest direct quantitative claims appear in \citet{ahmad2025}, who report that AI-enabled hybrid learning models have produced improvements of up to twenty-five per cent in vocabulary learning and thirty per cent in reading comprehension in certain implementations. These figures, although attractive, must be read with caution: they are drawn from heterogeneous studies, with varying populations and outcome measures, and they represent best-case rather than typical outcomes.
+
+More targeted evidence emerges for specific populations. \citet{urrea2024} synthesise thirteen studies on technology-assisted vocabulary learning for children with ASD and find consistent benefits for technology-mediated visual instruction, particularly when structured visual systems such as PECS are integrated with explicit instruction. Although the studies they review do not all involve AI generation as such, the underlying mechanism --- visual scaffolding for non-verbal learners --- extends naturally to AI-generated content. \citet{khoirunnisa2024} report on an AR system specifically designed for ASD learners, demonstrating reading skill improvements through personalised visual overlays.
+
+For learners with low language proficiency, the evidence base is thinner. \citet{ahmad2025} discuss NLP-based text simplification and bilingual glossary generation, both of which have visual components in some implementations, but the studies they cite typically measure language outcomes rather than the role of visuals specifically. \citet{bewersdorff2024} present scenarios in which MLLMs adapt science explanations to language level, but these remain illustrative rather than empirically validated.
+
+The strongest evidence for the \emph{conditions} under which AI-generated visual content produces learning, rather than for the magnitude of the effect, comes from \citet{lawson2024}. Their experimental contrast between summarising and drawing during multimedia animations indicates that the cognitive activity surrounding the visual is at least as important as the visual itself. This finding is convergent with qualitative evidence from \citet{buhler2024} that students with disabilities use generative AI most productively when they engage actively with the AI's output --- querying, refining, and integrating --- rather than passively consuming it.
+
+The qualitative evidence from \citet{buhler2024} deserves particular emphasis because it documents the user perspective, which is often missing from technology-focused literature. Students with ADHD, dyslexia, dyspraxia, and autism reported that generative AI helped them structure ideas, overcome writer's block, and translate dense academic content into more accessible formats. They also reported concerns about AI inaccuracy, academic integrity, and the cost of subscription tools. The combination of perceived benefit and perceived risk is itself a significant finding, suggesting that learner agency and metacognitive judgement are central to the productive use of generative AI.
+
+Synthesising across the corpus, the efficacy claim that the evidence supports is conditional rather than absolute: AI-generated visual explanations can produce meaningful learning gains for the target populations \emph{when} they are designed in accordance with multimedia learning principles, embedded in active learner tasks, and subject to learner judgement and verification.
+
+\section{Implementation Barriers and Ethical Concerns}
+
+The fourth theme concerns the obstacles that limit the realisation of the technology's pedagogical potential. Five recurring concerns emerge from the corpus. The first is \emph{accuracy and hallucination}. Generative models occasionally produce visually plausible but factually incorrect content, a problem that is particularly serious for learners who lack the prior knowledge to detect errors. \citet{buhler2024} document this concern in the words of the affected learners themselves, who reported that they had been misled by confident but incorrect AI outputs.
+
+The second concern is \emph{algorithmic bias}. \citet{ahmad2025} note that AI models trained on predominantly Western, English-language, neurotypical data may produce visual content that reflects those defaults, with potentially exclusionary effects for learners outside those defaults. The literature does not yet provide systematic evidence on bias in AI-generated visual explanations specifically, but the concern is well-established for the underlying models.
+
+The third concern is \emph{data protection and privacy}. \citet{bewersdorff2024} flag this as a significant constraint for school-based deployment, particularly where AI services involve processing learner data on third-party infrastructure. For learners with disabilities, where diagnostic and intervention data may be involved, the stakes are higher.
+
+The fourth concern is \emph{equity of access}. \citet{buhler2024} report that subscription costs constitute a real barrier for some students, and \citet{ahmad2025} note the broader digital-divide implications of AI-dependent pedagogy.
+
+The fifth concern is \emph{the role of the educator}. Multiple studies in the corpus, including \citet{bewersdorff2024}, \citet{ahmad2025}, and \citet{drosos2025}, emphasise that AI tools should augment rather than replace teacher judgement. This emphasis is especially important for learners with disabilities or language barriers, where pedagogical decisions are often clinical and contextual in nature.
+
+Together these five concerns indicate that the question of pedagogical potential cannot be answered by reference to learning outcomes alone. The same tools that produce thirty per cent gains in reading comprehension in some contexts may, in other contexts, mislead learners, embed bias, compromise privacy, exclude the under-resourced, or displace the educator's role. Realising the pedagogical potential of AI-generated visual explanations therefore requires not only good design but also institutional, ethical, and pedagogical safeguards.
+
+\section{Synthesis Summary}
+
+Taken together, the four themes converge on a single interpretation. AI-generated visual explanations represent a technologically viable, theoretically grounded, and partially evidenced pedagogical resource for learners with low language proficiency or learning disabilities. The technology is most useful when its design is anchored in multimedia learning theory, when it is embedded in active learner tasks, and when its outputs are subject to learner and teacher verification. The current research base is sufficient to justify careful implementation but insufficient to settle the larger questions about long-term learning outcomes, differential effects across disability profiles, and equity of access. The discussion that follows takes up these implications in turn.
